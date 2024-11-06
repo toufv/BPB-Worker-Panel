@@ -4349,7 +4349,8 @@ async function vlessOverWSHandler(request) {
   let address = "";
   let portWithRandomLog = "";
   const log = (info, event) => {
-    console.log(`[${address}:${portWithRandomLog}] ${info}`, event || "");
+    console.log("ture");
+    //console.log(`[${address}:${portWithRandomLog}] ${info}`, event || "");
   };
   const earlyDataHeader = request.headers.get("sec-websocket-protocol") || "";
   const readableWebSocketStream = makeReadableWebSocketStream(webSocket, earlyDataHeader, log);
@@ -4448,7 +4449,8 @@ async function trojanOverWSHandler(request) {
   let address = "";
   let portWithRandomLog = "";
   const log = (info, event) => {
-    console.log(`[${address}:${portWithRandomLog}] ${info}`, event || "");
+      console.log("1233");
+    //console.log(`[${address}:${portWithRandomLog}] ${info}`, event || "");
   };
   const earlyDataHeader = request.headers.get("sec-websocket-protocol") || "";
   const readableWebSocketStream = makeReadableWebSocketStream(webSocket, earlyDataHeader, log);
