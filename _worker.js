@@ -4349,7 +4349,7 @@ async function vlessOverWSHandler(request) {
   let address = "";
   let portWithRandomLog = "";
   const log = (info, event) => {
-    console.log("ture");
+    console.log("1233");
     //console.log(`[${address}:${portWithRandomLog}] ${info}`, event || "");
   };
   const earlyDataHeader = request.headers.get("sec-websocket-protocol") || "";
